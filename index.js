@@ -9,3 +9,7 @@ let checking  = [1,2,3,4,5,6,7,8];
 let checking2 = [9,10,11];
 let checking3 = checking.concat(checking2);
 console.log(checking3)
+
+// Array.copyWithin() -> function shallow copies part of this array to another location in the same array.
+let test  = [1,2,3,4,5,6,7,8];
+console.log(test.copyWithin(1,3));
