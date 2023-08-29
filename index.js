@@ -18,3 +18,8 @@ console.log(test.copyWithin(1,3));
 let test2 = ['a','b','c'];
 const iterator1 = test2.entries();
 console.log(iterator1.next().value);
+
+//Array.every instances tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value. 
+const isBelowThreshold = (currentValue) => currentValue < 40;
+const array1 = [1, 30, 39, 29, 10, 13];
+console.log(array1.every(isBelowThreshold));
