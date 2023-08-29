@@ -13,3 +13,8 @@ console.log(checking3)
 // Array.copyWithin() -> function shallow copies part of this array to another location in the same array.
 let test  = [1,2,3,4,5,6,7,8];
 console.log(test.copyWithin(1,3));
+
+// Array.entries() instances returns a new array iterator object that contains the key/value pairs for each index in the array.
+let test2 = ['a','b','c'];
+const iterator1 = test2.entries();
+console.log(iterator1.next().value);
