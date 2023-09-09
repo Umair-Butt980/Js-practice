@@ -24,9 +24,15 @@ const isBelowThreshold = (currentValue) => currentValue < 40;
 const array1 = [1, 30, 39, 29, 10, 13];
 console.log(array1.every(isBelowThreshold) , "<=====This is the result of EVERY function=====>");
 
-// Array.map() is used to iterate over the elements of an array and call a specific function on each element in the array.
+// Array.map() is used to iterate over the elements of an array and call a specific function on each element in the array. it is a non mutating method
 let testMap = [1,2,3,4,5,6];
 let newTest = testMap.map((elem, index)=> {
 return {key:index , value:elem+elem}
 })
 console.log(newTest , "<=====This is the result of MAP function=====>")
+
+// Array.forEach() iterates over each element of an array and executes the function once on each element of that array.
+let testForEach = [1,2,3,4,5,6];
+testForEach.forEach((element)=> {
+    console.log(element * element, '<======This is the result of the FOREACH function')
+}) 
