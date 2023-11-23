@@ -36,3 +36,15 @@ let testForEach = [1,2,3,4,5,6];
 testForEach.forEach((element)=> {
     console.log(element * element, '<======This is the result of the FOREACH function')
 }) 
+
+//findIndex() instances returns the index of the first element in an array that satisfies the provided testing function.
+const arr = [5, 12, 8, 130, 44];
+const isLargeNumber = (element) => element > 13;
+console.log(arr.findIndex(isLargeNumber));
+// Expected output: 3
+
+//The findLast() method of Array instances iterates the array in reverse order and returns the value of the first element that satisfies the provided testing function.
+const findLast = [5, 12, 50, 130, 44];
+const found = findLast.findLast((element) => element > 45);
+console.log(found);
+// Expected output: 130
