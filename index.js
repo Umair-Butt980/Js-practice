@@ -48,3 +48,7 @@ const findLast = [5, 12, 50, 130, 44];
 const found = findLast.findLast((element) => element > 45);
 console.log(found);
 // Expected output: 130
+
+//The flat() method of Array instances creates a new array with all sub-array elements concatenated into it recursively up to the specified depth. 
+const arr1 = [0, 1, 2, [3, 4]];
+console.log(arr1.flat());
