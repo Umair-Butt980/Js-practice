@@ -10,6 +10,7 @@ function myFunction() {
 
 console.log(myClass); //ReferenceError
 class myClass{};
+// Reason:-  like 'let' and 'const', 'class' declarations are block-scoped and thus can't hoist to the top of their enclosing block.
 
 var MyClass = class Klass {
     // methods go here  //ReferenceError
